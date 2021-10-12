@@ -1,0 +1,23 @@
+.section{
+    &__title{
+        color: $whiteText;
+        font-size: 26,95;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        padding: 0;
+        &--black{
+            color: $black;
+        }
+    }
+    &__subtitle{
+        color: $yellow;
+        font-size: 1rem;
+        font-weight: lighter;
+        padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+        border-bottom: 1px solid $whiteText;
+        &--black{
+            color: $black;
+            border-bottom: 1px solid $black;
+        }
+    }
+}

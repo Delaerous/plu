@@ -1,0 +1,41 @@
+.people{
+    &__list{
+        display: flex;
+    }
+    &__item{
+        border: 2px solid $whiteText;
+        position: relative;
+        overflow: hidden;
+        padding: 0.5rem;
+        margin-right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            .people-mask{
+                top: 0;;
+            };
+            .link__svg{
+                fill: $yellow;
+                z-index: 100;
+            };
+            .link{
+                background-color: $whiteText;
+                z-index: 100;
+            }
+            .people__name{
+                color: $black;
+            }
+        }
+    }
+    &__name{
+        color: $whiteText;
+        margin: 1rem 0;
+        z-index: 5;
+        font-size: 1rem;
+    }
+    
+}

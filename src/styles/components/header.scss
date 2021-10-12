@@ -1,0 +1,9 @@
+.header{
+    min-height: 3.5rem;
+    background-color: $black;
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

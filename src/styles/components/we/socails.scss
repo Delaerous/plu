@@ -1,0 +1,27 @@
+.socials{
+    z-index: 100;
+    
+    display: flex;
+    justify-content: center;
+
+}
+.link{
+    display: inline-block;
+    border-radius: 50%;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    cursor: pointer;
+    background-color: $yellow;
+    z-index: 100;
+    &__svg{
+        z-index: 100;
+        cursor: pointer;
+        z-index: 100;
+        width: 1rem;
+        height: 1rem;
+        fill: $black;
+        transition: all 0.3s linear;
+        vertical-align: middle;
+       
+    }
+}

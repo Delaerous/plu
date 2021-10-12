@@ -1,0 +1,24 @@
+.services{
+    padding: 3rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    &__img{
+        border-radius: 50%;
+        max-width: 7.5rem;
+        border: 3px solid $whiteText;
+        transition: all 0.5s ;
+        &:hover{
+            max-width: 9rem;
+        }
+    }
+    &__title{
+        color:$yellow;
+        line-height: 2rem;
+        margin: 0.5rem 0;
+    }
+    &__text{
+        color:$whiteText;
+        padding: 0 1.5rem;
+        margin: 0 0 0.5rem 0;
+    }
+}

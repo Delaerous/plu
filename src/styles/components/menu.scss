@@ -1,0 +1,21 @@
+.menu{
+    &__list{
+        display: flex;
+        color:$whiteText;
+    }
+    &__item{
+        text-transform: uppercase;
+        vertical-align: middle;
+        margin: 10px 3px;
+        border: 1px solid $black;
+        font-size: 0.75rem;
+       
+    }
+    &__link{
+        padding: 0.5rem 0.75rem 0.5rem;
+        transition: border-color 1s ease;
+        &:hover{
+            border:1px solid $yellow;
+        }
+    }
+}
