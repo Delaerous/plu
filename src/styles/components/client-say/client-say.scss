@@ -1,0 +1,19 @@
+.client-say{
+    text-align: center;
+    background-color:$black;
+    padding-bottom: 3.5rem;
+    &__top{
+        margin-bottom: 2.5rem;
+    }
+    &__text{
+        color:$whiteText;
+        display: block;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+        line-height: 1.3em;
+        width: 70%;
+    }
+   
+}

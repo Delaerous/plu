@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(pluton.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -349,7 +348,8 @@ ul li {
 
 .container {
   margin: 0 auto;
-  max-width: 1170px; }
+  max-width: 1170px;
+  overflow: hidden; }
 
 .ability {
   background-color: #181A1C;
@@ -381,13 +381,88 @@ ul li {
 
 .btn {
   font-size: 0.9rem;
+  display: block;
   padding: 0.75rem 1.5rem;
   border: 1px solid #181A1C;
   text-transform: uppercase;
-  background-color: transparent; }
+  background-color: transparent;
+  max-width: fit-content;
+  margin: 0 auto; }
+  .btn--yellow {
+    background-color: #FECE1A;
+    border: none; }
   .btn:hover {
     background-color: #181A1C;
     color: #fff; }
+
+.carousel {
+  padding-top: 2.5rem;
+  background-color: #181A1C;
+  border-top: 6px solid #FECE1A;
+  background-image: url("../../../images/clientsLogo/brand-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .carousel__title {
+    color: #fff; }
+
+.card {
+  border: 2px solid #fff;
+  padding: 0 !important;
+  width: 50px; }
+
+.client-say {
+  text-align: center;
+  background-color: #181A1C;
+  padding-bottom: 3.5rem; }
+  .client-say__top {
+    margin-bottom: 2.5rem; }
+  .client-say__text {
+    color: #fff;
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    line-height: 1.3em;
+    width: 70%; }
+
+.feedback__text {
+  background-color: #FECE1A;
+  padding: 0.75rem;
+  font-weight: 100;
+  font-size: 0.85rem; }
+
+.feedback__list {
+  display: flex;
+  justify-content: space-between; }
+
+.feedback__item {
+  margin-right: 1.5rem; }
+  .feedback__item:last-child {
+    margin-right: 0; }
+
+.human {
+  display: flex;
+  padding-top: 2rem; }
+  .human__img {
+    max-width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.5rem; }
+  .human__desc {
+    color: #FECE1A;
+    padding-left: 1rem;
+    text-align: left; }
+  .human__name {
+    font-size: 0.85rem; }
+  .human__position {
+    font-size: 0.6rem; }
+  .human__triangle {
+    margin-left: 0.5rem;
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid #FECE1A;
+    border-left: 1rem outset transparent;
+    border-right: 1rem outset transparent; }
 
 .header {
   min-height: 3.5rem;
@@ -396,6 +471,15 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+
+.hosting {
+  text-align: center;
+  background-color: #FECE1A;
+  padding-bottom: 2.5rem; }
+  .hosting__title {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 2.5rem 0; }
 
 .logo {
   padding: 0.5rem 1rem 0.5rem; }
@@ -522,18 +606,42 @@ ul li {
 .swiper-pagination-bullet-active {
   background: #000; }
 
-.header-triangle {
+.triangle {
   margin: 0 auto;
   text-align: center;
   width: 0;
   height: 0;
   border-top: 30px solid #181A1C;
-  border-left: 585px outset transparent;
-  border-right: 585px outset transparent;
   position: relative;
   clear: none;
   top: 0;
   z-index: 999; }
+  .triangle--yellow {
+    border-top: 30px solid #FECE1A; }
+
+.about__title {
+  color: #FECE1A;
+  font-size: 1,225;
+  margin-bottom: .5rem;
+  font-weight: normal; }
+
+.about__text {
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: #fff; }
+
+.hiring {
+  width: 50%;
+  background-color: #fff;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.925;
+  padding: 1rem 2rem; }
+  .hiring__text {
+    padding: 1rem;
+    font-weight: 100;
+    font-size: 0.85rem;
+    line-height: 1rem; }
 
 .people-mask {
   z-index: 1;
@@ -553,36 +661,77 @@ ul li {
     font-size: 0.85rem;
     font-weight: 100; }
 
-.people__list {
-  display: flex; }
+.people {
+  margin-bottom: 2rem; }
+  .people__list {
+    display: flex; }
+  .people__item {
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .people__item:last-child {
+      margin-right: 0; }
+    .people__item:hover .people-mask {
+      top: 0; }
+    .people__item:hover .link__svg {
+      fill: #FECE1A;
+      z-index: 100; }
+    .people__item:hover .link {
+      background-color: #fff;
+      z-index: 100; }
+    .people__item:hover .people__name {
+      color: #181A1C; }
+  .people__name {
+    color: #fff;
+    margin: 1rem 0;
+    z-index: 5;
+    font-size: 1rem; }
 
-.people__item {
-  border: 2px solid #fff;
+.skills {
+  transition: all  1s  ease-out;
   position: relative;
-  overflow: hidden;
-  padding: 0.5rem;
-  margin-right: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .people__item:last-child {
-    margin-right: 0; }
-  .people__item:hover .people-mask {
-    top: 0; }
-  .people__item:hover .link__svg {
-    fill: #FECE1A;
-    z-index: 100; }
-  .people__item:hover .link {
-    background-color: #fff;
-    z-index: 100; }
-  .people__item:hover .people__name {
-    color: #181A1C; }
+  width: 48%; }
+  .skills__item {
+    transition: all  1s  ease-out;
+    margin-bottom: 2rem;
+    background: #fff;
+    height: 2rem;
+    overflow: hidden; }
+    .skills__item:last-child {
+      margin-bottom: 0; }
+  .skills__bar {
+    transition: all  1s  ease-out;
+    position: absolute;
+    min-height: 2rem;
+    background-color: #FECE1A;
+    left: 0;
+    width: 80%;
+    z-index: 1; }
+  .skills__name {
+    position: relative;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    left: 10px;
+    z-index: 5;
+    color: #181A1C;
+    text-align: left;
+    line-height: 2rem; }
 
-.people__name {
-  color: #fff;
-  margin: 1rem 0;
-  z-index: 5;
-  font-size: 1rem; }
+.width70 {
+  width: 70%;
+  animation-delay: 5s; }
+
+.width60 {
+  width: 60%; }
+
+.width50 {
+  width: 50%; }
 
 .socials {
   z-index: 100;
@@ -610,10 +759,14 @@ ul li {
 .we {
   background: #181A1C;
   text-align: center;
-  padding: 2.5rem 0; }
+  padding: 0 0 2.5rem; }
+  .we__bottom {
+    display: flex;
+    justify-content: space-between; }
 
 .we__main {
-  padding-top: 2.5rem; }
+  padding-top: 2.5rem;
+  margin-bottom: 2rem; }
 
 .category {
   padding-top: 2.5rem;
@@ -690,7 +843,7 @@ ul li {
 
 .works {
   background-color: #FECE1A;
-  padding: 2.5rem 0 18rem;
+  padding: 0 0 18rem;
   display: flex;
   justify-content: center;
   flex-direction: column;

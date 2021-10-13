@@ -1,9 +1,15 @@
 .we{
     background: $black;
     text-align: center;
-    padding: 2.5rem 0;
+    padding:0 0 2.5rem ;
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
     
 }
 .we__main{
     padding-top: 2.5rem;
+    margin-bottom: 2rem;
+    
 }

@@ -1,9 +1,17 @@
 .btn{
-    font-size: 0.9rem;
+        font-size: 0.9rem;
+        display: block;
         padding: 0.75rem 1.5rem;
         border: 1px solid $black;
         text-transform: uppercase;
         background-color:transparent;
+        max-width: fit-content;
+        margin: 0 auto;
+        &--yellow{
+            background-color:$yellow;
+            border:none;
+        }
+       
         &:hover{
             background-color:$black;
             color:$whiteText;

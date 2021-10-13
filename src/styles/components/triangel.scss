@@ -1,15 +1,16 @@
-.header-triangle{
+.triangle{
     margin: 0 auto;
     text-align: center;
     width: 0;
     height: 0;
-    border-top: 30px solid #181A1C;
-    border-left: 585px outset transparent;
-    border-right: 585px outset transparent;
+    border-top: 30px solid $black;
+  
     position: relative;
     clear: none;
     top: 0;
     z-index: 999;
-    
+    &--yellow{
+        border-top: 30px solid $yellow;
+    }
   
 }

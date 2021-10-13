@@ -1,0 +1,13 @@
+.about{
+    &__title{
+        color: $yellow;
+        font-size: 1,225;
+        margin-bottom: .5rem;
+        font-weight: normal;
+    }
+    &__text{
+        font-size: 0.8rem;
+        font-weight: 100;
+        color:$whiteText;
+    }
+}

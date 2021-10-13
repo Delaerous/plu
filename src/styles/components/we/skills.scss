@@ -1,0 +1,47 @@
+.skills{
+    transition: all  1s  ease-out;
+    position: relative;
+    width: 48%;
+    &__item{
+        transition: all  1s  ease-out;
+        margin-bottom: 2rem;
+        background: $whiteText;
+        height: 2rem;
+        overflow: hidden;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__bar{
+        transition: all  1s  ease-out;
+        position: absolute;
+        min-height: 2rem;
+        background-color:$yellow;
+        left: 0;
+        width: 80%;
+        z-index: 1;
+
+    }
+    &__name{
+        position: relative;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        left: 10px;
+        z-index: 5;
+        color: $black;
+        text-align: left;
+        line-height: 2rem;
+    }
+}
+
+.width70{
+    width: 70%;
+    animation-delay: 5s;
+}
+.width60{
+    width: 60%;
+}
+.width50{
+    width: 50%;
+}

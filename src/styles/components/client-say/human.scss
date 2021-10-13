@@ -1,0 +1,30 @@
+.human{
+    display: flex;
+    padding-top: 2rem;
+    &__img{
+        max-width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 0.5rem;
+        
+    }
+    &__desc{
+        color:$yellow;
+        padding-left: 1rem;
+        text-align: left;
+    }
+    &__name{
+        font-size: 0.85rem;
+    }
+    &__position{
+        font-size: 0.6rem;
+    }
+    &__triangle{
+        margin-left: 0.5rem;
+        width: 0;
+        height: 0;
+        border-top: 0.5rem solid $yellow;
+        border-left: 1rem outset transparent;
+        border-right: 1rem outset transparent;
+    }
+
+}

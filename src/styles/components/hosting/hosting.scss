@@ -1,0 +1,10 @@
+.hosting{
+    text-align: center;
+    background-color:$yellow;
+    padding-bottom: 2.5rem;
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 100;
+        padding:2.5rem 0;
+    }
+}

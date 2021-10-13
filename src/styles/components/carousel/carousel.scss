@@ -1,0 +1,20 @@
+.carousel{
+    padding-top: 2.5rem;
+    background-color:$black;
+    border-top:6px solid $yellow;
+    background-image: url("../../../images/clientsLogo/brand-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title{
+        color:$whiteText;
+    }
+        
+    
+}
+
+.card{
+    border: 2px solid $whiteText;
+    padding: 0!important;
+    width: 50px;
+}
+
