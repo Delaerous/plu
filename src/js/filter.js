@@ -9,10 +9,11 @@ category.addEventListener('click', (event) => {
     console.log(filterClass);
 
     filterBox.forEach(elem => {
-        elem.classList.remove( 'hide',"animate__fadeOutLeft");
+        elem.classList.remove( 'hide'); 
         if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-            elem.classList.add('hide', 'animate__fadeOutLeft');
+            elem.classList.add('hide');
         }
     });
 
 });
+

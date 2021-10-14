@@ -9,6 +9,16 @@
         color:$whiteText;
         z-index: 1;
     }
+    &-desc{
+        background-color:$black;
+        display: flex;
+        justify-content: center;
+        margin:0 auto;
+        &__img{
+            width: 47%;
+        }
+        
+    }
     
 }
 
