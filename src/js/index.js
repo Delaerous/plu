@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
 	  type: 'bullets',
 	},
 	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
+	  nextEl: ".carousel__next",
+	  prevEl: ".carousel__prev",
 	},
   })

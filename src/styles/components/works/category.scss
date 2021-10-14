@@ -1,6 +1,7 @@
 .category{
     padding-top: 2.5rem;
     margin-bottom: 2rem;
+    display: block;
     &__list{
         display: flex;
     }
@@ -15,6 +16,7 @@
         outline-offset: none;
         border:1px solid $black;
         padding: 0.4rem 1.25rem;
+        display: block;
         &:hover{
             color:white;
             background-color:$black;

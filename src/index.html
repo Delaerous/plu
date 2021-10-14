@@ -13,7 +13,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header__left">
@@ -25,23 +25,23 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="" class="menu__link"> HOME
+                                    <a href="" class="menu__link" data-scroll-to="home"> HOME
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link"> SERVICES
+                                    <a href="" class="menu__link" data-scroll-to="services"> SERVICES
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link"> PORTFOLIO
+                                    <a href="" class="menu__link" data-scroll-to="works"> PORTFOLIO
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link"> ABOUT
+                                    <a href="" class="menu__link" data-scroll-to="about"> ABOUT
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link"> CLIENTS
+                                    <a href="" class="menu__link" data-scroll-to="client"> CLIENTS
                                     </a>
                                 </li>
                                 <li class="menu__item">
@@ -59,10 +59,10 @@
             </div>
         </header>
     
-        <section class="slider">
+        <section class="slider" data-section="home">
             <div class="swiper mySwiper">
                 <div class="parallax-bg" " data-swiper-parallax=" -20%"></div>
-                <div class="triangle wow animate__fadeIn"> </div>
+                <div class="triangle wow animate__animated animate__fadeIn"> </div>
                 <div class="swiper-wrapper">
     
                     <div class="swiper-slide">
@@ -147,7 +147,7 @@
     
     
         </section>
-        <section class="ability">
+        <section class="ability" data-section="services">
             <div class="container">
                 <div class="ability__top">
                     <h1 class="section__title">What We Do?</h1>
@@ -177,8 +177,8 @@
                 
             </div>
         </section>
-        <section class="works">
-            <div class="triangle wow animate__fadeIn"> </div>
+        <section class="works" data-section="works">
+            <div class="triangle animate__animated wow animate__fadeIn"> </div>
             <div class="container">
                 
                 <div class="works__top">
@@ -192,23 +192,23 @@
                 <div class="works__bottom">
                     <nav class="category">
                         <ul class="category__list">
-                            <li class="category__item">
-                                <button class="category__btn">All</button>
+                            <li  class="category__item">
+                                <button data-filter="all" class="category__btn">All</button>
                             </li>
-                            <li class="category__item">
-                                <button class="category__btn">Web</button>
+                            <li  class="category__item">
+                                <button data-filter="web" class="category__btn">Web</button>
                             </li>
-                            <li class="category__item">
-                                <button class="category__btn">Photo</button>
+                            <li  data-filter="photo" class="category__item">
+                                <button data-filter="photo" class="category__btn">Photo</button>
                             </li>
-                            <li class="category__item">
+                            <li  class="category__item">
                                 <button class="category__btn">Identify</button>
                             </li>
                         </ul>
                     </nav>
                     <div class="projects">
                         <ul class="projects__list">
-                            <li class="projects__item project">
+                            <li class="projects__item project web animate__animate">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -221,7 +221,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project photo animate__animated">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -234,7 +234,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project web animate__animated">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -247,7 +247,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project web animate__animated">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -260,7 +260,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project photo animate__animated">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -273,7 +273,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project web animate__animated">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -286,7 +286,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project web animate__animated">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -299,7 +299,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project photo animate__animated ">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -312,7 +312,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="projects__item project">
+                            <li class="projects__item project web animate__animated ">
                                 <img class="project__img" src="./images/Portfolio01.png" alt="">
                                 <div class="project__description">
                                     <h3 class="project__title">Thumbnail label</h3>
@@ -324,12 +324,8 @@
                                         <use xlink:href="./images/svg/sprite.svg#plus"></use>
                                     </svg>
                                 </div>
-                                <div class="plus">
-                                    <svg class="plus__icon">
-                                        <use xlink:href="./images/svg/sprite.svg#plus"></use>
-                                    </svg>
-                                </div>
                             </li>
+
     
                         </ul>
                     </div>
@@ -338,8 +334,8 @@
             </div>
     
         </section>
-        <section class="we">
-            <div class=" triangle triangle--yellow wow animate__fadeIn "> </div>
+        <section class="we" data-section="about" >
+            <div class=" triangle triangle--yellow wow animate__animated animate__animated animate__fadeIn "> </div>
             <div class="container">
                 <div class="we__top">
                     <h1 class="section__title">Who We Are?</h1>
@@ -482,7 +478,7 @@
     
                         </ul>
                     </div>
-                    <div  class="hiring wow  animate__fadeInLeftBig" >
+                    <div  class="hiring wow  animate__animated animate__fadeInLeftBig" >
                         <h1 class="hiring__title">We're Hiring</h1>
                         <p class="hiring__text">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -495,15 +491,15 @@
                 </div>
             </div>
         </section>
-        <section class="hosting">
-            <div class="triangle"></div>
+        <section class="hosting" >
+            <div class="triangle wow animate__animated animate__animated animate__fadeIn"></div>
             <div class="container">
                 <h2 class="hosting__title">Need hosting for pluton? We recommend DreamHost ultrafast SSD hosting, plust unlimited storage & bandwidth</h2>
                 <a class="btn ">Get it now</a>
             </div>
         </section>
-        <section class="client-say">
-            <div class="triangle triangle--yellow"></div>
+        <section class="client-say" data-section="client">
+            <div class="triangle triangle--yellow wow animate__animated animate__animated animate__fadeIn"></div>
             <div class="container">
                 <div class="client-say__top">
                     <h1 class="section__title">What Client Say??</h1>
@@ -554,7 +550,7 @@
             </div>
         </section>
         <section class="carousel">
-            <div class="container">
+            <div class="container container--relative">
                 <div class="carousel__title">Our Clients</div>
                 <div class="carousel__list">
                     <div class="swiper-containerjs">
@@ -575,10 +571,20 @@
                                 <img src="./images/clientsLogo/ClientLogo05.png" alt="">
                             </div>
                         </div>
-                        <div class="swiper-pagination pag-2"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="carousel__nav">
+                        <div class="carousel__prev">
+                            <svg class="carousel__prev--btn">
+                                <use xlink:href="./images/svg/sprite.svg#chevron-left-solid"></use>
+                            </svg>
+                        </div>
+                        <div class="carousel__next">
+                            <svg class="carousel__next--btn">
+                                <use xlink:href="./images/svg/sprite.svg#chevron-left-solid"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>

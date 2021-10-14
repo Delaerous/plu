@@ -7,8 +7,8 @@ const slider1 = document.querySelector('.swiper-containerjs');
         spaceBetween: 30,
 	loop: true,
     
-	// navigation: {
-	// 	nextEl: '.swiper-button-next',
-	// 	prevEl: '.swiper-button-prev',
-	// },
+	navigation: {
+		nextEl: '.carousel__next',
+		prevEl: '.carousel__prev',
+	},
 });
