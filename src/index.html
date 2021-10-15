@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=88922c55-4b5a-4938-a654-97013e087c3d&lang=ru_RU" type="text/javascript">
+    </script>
     <link rel="stylesheet" href="main.min.css">
 </head>
 
@@ -45,11 +47,11 @@
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link"> PRICE
+                                    <a href="" class="menu__link" data-scroll-to="price"> PRICE
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link"> CONTACT
+                                    <a href="" class="menu__link"  data-scroll-to="contactUs"> CONTACT
                                     </a>
                                 </li>
                             </ul>
@@ -970,7 +972,7 @@
                 
             </div>
         </section>
-        <section class="price">
+        <section class="price" data-section="price">
             <div class="container">
                 <div class="price__top">
                     <h1 class="section__title section__title--black">Price</h1>
@@ -1054,13 +1056,71 @@
                         
                     </ul>
                 </div>
+                <div class="price__bottom">
+                    <h3 class="price__subtitle">
+                        We Offer Custom Plans. Contact Us For More Info.
+                    </h3>
+                    <button class="btn">
+                        Contact Us
+                    </button>
+                </div>
             </div>
+        </section>
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter__top">
+                    <h4 class="newsletter__title">
+                        Newsletter
+                    </h4>
+                </div>
+                <div class="newsletter__main">
+                    <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <form  class="newsletter__form">
+                        <input class="newsletter__input" type="email" placeholder="Enter your email">
+                        <button class="newsletter__btn btn btn--yellow btn--small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+
+        </section>
+        <section class="contactUs" data-section="contactUs">
+            <div class="container">
+                <div class="contactUs__top">
+                    <h1 class="section__title section__title--black">
+                        Contact Us
+                    </h1>
+                    <h4 class="section__subtitle section__subtitle--black">Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</h4>
+                </div>
+            </div>
+            
+            <div class="contactUs__map">
+                <div class="map" id="map">
+                    <div class="container">
+                        <div class="contactUs__form">
+                            <h3 class="contactUs__form-title">
+                                Say Hello
+                            </h3>
+                            <form  class="form">
+                                <input class="form__input" type="text" placeholder="Your name...">
+                                <input class="form__input" type="email" placeholder="Your email...">
+                                <textarea class="form__textarea"></textarea>
+                            </form>
+                            <button class="btn btn--noUppercase">Send Message</button>
+                        </div>  
+                    </div>
+                </div>
+                
+            </div>
+            
+            
         </section>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   
     <script src="main.min.js"></script>
     <script>
         new WOW().init();

@@ -390,6 +390,10 @@ ul li {
   background-color: transparent;
   max-width: fit-content;
   margin: 0 auto; }
+  .btn--noUppercase {
+    text-transform: none;
+    color: #747C89;
+    border-color: #747C89; }
   .btn--yellow {
     background-color: #FECE1A;
     border: none; }
@@ -416,7 +420,7 @@ ul li {
     font-weight: 400;
     font-size: 1.225rem;
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #747C89;
     margin-bottom: 2.5rem;
     position: relative; }
   .carousel__nav {
@@ -507,6 +511,44 @@ ul li {
     border-left: 1rem outset transparent;
     border-right: 1rem outset transparent; }
 
+.contactUs {
+  background-color: #FECE1A;
+  text-align: center;
+  padding-top: 2.5rem; }
+  .contactUs__top {
+    margin-bottom: 2rem; }
+  .contactUs__form {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 2rem;
+    width: 30%;
+    padding: 1rem; }
+    .contactUs__form-title {
+      padding: 1.5rem 0;
+      color: #747C89; }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+  .form__input {
+    padding: 0.5rem;
+    line-height: 1rem;
+    height: 2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid #747C89; }
+  .form__textarea {
+    resize: none;
+    height: 4rem;
+    margin-bottom: 2rem; }
+
+.map {
+  width: 100%;
+  height: 25rem;
+  position: relative; }
+
 .header {
   min-height: 3.5rem;
   background-color: #181A1C; }
@@ -553,6 +595,47 @@ ul li {
   .menu__link:hover {
     border: 1px solid #FECE1A; }
 
+.newsletter {
+  background: url("./images/brand-bg.png");
+  padding: 3rem 0; }
+  .newsletter__title {
+    color: #FECE1A;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #747C89;
+    margin-bottom: 1.5rem; }
+  .newsletter__main {
+    display: flex;
+    justify-content: space-between; }
+  .newsletter__text {
+    color: #fff;
+    width: 47%; }
+  .newsletter__form {
+    width: 53%;
+    display: flex;
+    justify-content: flex-end; }
+  .newsletter__btn {
+    margin: 0 0;
+    width: 35%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    height: auto;
+    margin-bottom: 0.5rem; }
+  .newsletter__input {
+    width: 60%;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    height: auto;
+    margin-bottom: 0.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border-radius: 4px;
+    outline: none; }
+
 .column {
   min-width: calc((1170px / 3) - 1rem); }
   .column__top {
@@ -587,10 +670,16 @@ ul li {
     display: flex;
     justify-content: space-between;
     padding-top: 2.5rem; }
+  .price__main {
+    margin-bottom: 2.5rem; }
+  .price__subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1rem; }
 
 .section__title {
   color: #fff;
-  font-size: 26,95;
+  font-size: 2rem;
   font-weight: normal;
   margin-bottom: 1rem;
   padding: 0; }

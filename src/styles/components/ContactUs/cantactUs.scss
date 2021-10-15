@@ -1,0 +1,20 @@
+.contactUs{
+    background-color:$yellow;
+    text-align: center;
+    padding-top: 2.5rem;
+    &__top{
+        margin-bottom: 2rem;
+    }
+    &__form{
+        position: absolute;
+        z-index: 1;
+        background-color:$formGray;
+        top: 2rem;
+        width: 30%;
+        padding: 1rem;
+        &-title{
+            padding: 1.5rem 0;
+            color:$gray;
+        }
+    }
+}

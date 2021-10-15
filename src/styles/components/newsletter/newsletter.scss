@@ -1,0 +1,49 @@
+.newsletter{
+    background:url("./images/brand-bg.png");
+    padding:3rem 0;
+    &__title{
+        color:$yellow;
+        font-size: 1.5rem;
+        font-weight: normal;
+        padding-bottom: 1.5rem;
+        border-bottom:1px solid $gray;
+        margin-bottom: 1.5rem;
+    }
+    &__main{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__text{
+        color:$whiteText;
+        width: 47%;    
+    }
+    &__form{
+        width: 53%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__btn{
+        margin: 0 0;
+        width: 35%;
+        margin-top: 0.5rem;
+        padding: 0.75rem;
+        height: auto;
+        margin-bottom: 0.5rem; 
+
+    }
+    &__input{
+        width: 60%;
+        margin-top: 0.5rem;
+        padding: 0.75rem;
+        height: auto;
+        margin-bottom: 0.5rem;
+        margin-right: 1.5rem;
+        font-size: 0.8rem;
+        line-height: 20px;
+        color: #555555;
+        vertical-align: middle;
+        border-radius: 4px;
+        outline: none;
+    }
+}

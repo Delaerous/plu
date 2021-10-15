@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    &__input{
+        padding: 0.5rem;
+        line-height: 1rem;
+        height: 2rem;
+        border-radius:5px;
+        margin-bottom: 1rem;
+        outline: none;
+        border: 1px solid $gray;
+    }
+    &__textarea{
+        resize: none;
+        height: 4rem;
+        margin-bottom: 2rem;
+
+    }
+}
