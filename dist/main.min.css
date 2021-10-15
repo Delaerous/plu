@@ -396,6 +396,13 @@ ul li {
   .btn:hover {
     background-color: #181A1C;
     color: #fff; }
+  .btn--black {
+    background-color: #181A1C;
+    color: #FECE1A;
+    border: none; }
+    .btn--black:hover {
+      background-color: #FECE1A;
+      color: #181A1C; }
 
 .carousel {
   padding: 2.5rem 0;
@@ -545,6 +552,41 @@ ul li {
   transition: border-color 1s ease; }
   .menu__link:hover {
     border: 1px solid #FECE1A; }
+
+.column {
+  min-width: calc((1170px / 3) - 1rem); }
+  .column__top {
+    background-color: #181A1C;
+    color: #FECE1A;
+    padding: 2rem;
+    border-radius: 0.5rem 0.5rem 0 0; }
+  .column__main, .column__bottom {
+    padding: 0  2rem 1.5rem;
+    background-color: #fff; }
+  .column__title {
+    font-size: 2rem;
+    font-weight: 400; }
+  .column__bottom {
+    border-radius: 0 0 0.5rem 0.5rem; }
+
+.column-characteristic__item {
+  padding: 1.25rem;
+  color: #747C89;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  border-bottom: 1px solid #181A1C; }
+  .column-characteristic__item--bold {
+    font-weight: bold; }
+
+.price {
+  background-color: #FECE1A;
+  text-align: center;
+  padding: 2.5rem 0;
+  color: #181A1C; }
+  .price__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem; }
 
 .section__title {
   color: #fff;

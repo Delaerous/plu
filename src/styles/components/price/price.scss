@@ -1,0 +1,12 @@
+.price{
+    background-color:$yellow;
+    text-align: center;
+    padding: 2.5rem 0;
+    color: $black;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2.5rem;
+    }
+   
+}

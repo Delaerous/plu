@@ -11,9 +11,19 @@
             background-color:$yellow;
             border:none;
         }
-       
+        
         &:hover{
             background-color:$black;
             color:$whiteText;
+        }
+        &--black{
+            background-color:$black;
+            color:$yellow;
+            border:none;
+            &:hover{
+                background-color:$yellow;
+                color:$black;
+                
+            }
         }
 }

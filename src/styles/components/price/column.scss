@@ -1,0 +1,31 @@
+.column{
+    min-width: calc((#{$containerWidth} / 3) - 1rem);
+    &__top{
+        background-color:$black;
+        color: $yellow;
+        padding: 2rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    &__main, &__bottom{
+        padding:0  2rem 1.5rem;
+        background-color:$whiteText;
+    }
+    &__title{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    &__bottom{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
+
+.column-characteristic__item{
+    padding: 1.25rem;
+    color: $gray;
+    font-size: 1.5rem;
+    font-weight:lighter;
+    border-bottom:1px solid $black;
+    &--bold{
+        font-weight: bold;
+    }
+}
