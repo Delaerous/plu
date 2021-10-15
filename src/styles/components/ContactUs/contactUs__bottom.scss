@@ -1,0 +1,10 @@
+.contactUs{
+    &__item{
+        color:$whiteText;
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        &:nth-child(2){
+            color:$black;
+        }
+    }
+}
