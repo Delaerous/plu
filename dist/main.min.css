@@ -848,7 +848,8 @@ ul li {
   height: 32px;
   opacity: 0.3;
   top: 0;
-  right: 0; }
+  right: 0;
+  cursor: pointer; }
   .box__cross::before {
     position: absolute;
     left: 15px;
@@ -894,11 +895,14 @@ ul li {
     background-color: #181A1C;
     color: #fff;
     z-index: 1; }
+  .project-big {
+    overflow: hidden; }
   .project-desc {
     background-color: #181A1C;
     display: flex;
     justify-content: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 0; }
     .project-desc__img {
       width: 47%; }
 
@@ -953,6 +957,9 @@ ul li {
     padding: 0;
     margin: 0;
     border: 0; } }
+
+.h100 {
+  height: 100%; }
 
 .works {
   background-color: #FECE1A;

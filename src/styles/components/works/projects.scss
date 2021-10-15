@@ -4,16 +4,22 @@
     
     max-width: 31%;
     
+    
     &__description{
         background-color:$black;    
         color:$whiteText;
         z-index: 1;
+        
+    }
+    &-big{
+        overflow: hidden;
     }
     &-desc{
         background-color:$black;
         display: flex;
         justify-content: center;
         margin:0 auto;
+        height: 0;
         &__img{
             width: 47%;
         }
@@ -21,6 +27,9 @@
     }
     
 }
+
+ 
+
 
 .projects__item{
     transition: all 1s ease-in-out;
@@ -84,4 +93,9 @@
           margin: 0;
           border: 0;
     }	
+  }
+
+
+  .h100{
+      height: 100%;
   }
