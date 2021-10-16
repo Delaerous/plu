@@ -7,6 +7,9 @@
         display: flex;
         justify-content: space-between;
         padding-top: 2.5rem;
+        @include phoneL{
+            flex-direction: column;
+        }
     }
     &__main{
         margin-bottom: 2.5rem;

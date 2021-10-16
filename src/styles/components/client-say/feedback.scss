@@ -9,11 +9,20 @@
     &__list{
         display: flex;
         justify-content: space-between;
+        @include phoneL{
+            flex-direction: column;
+        }
     }
     &__item{
         margin-right: 1.5rem;
         &:last-child{
             margin-right: 0;
+        }
+        @include phoneL{
+            margin-bottom: 1rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
     }
 }

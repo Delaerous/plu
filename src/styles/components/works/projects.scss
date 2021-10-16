@@ -1,10 +1,16 @@
 .project{
     display: block;
     margin: 0.6rem;
-    
-    max-width: 31%;
-    
-    
+    max-width: calc((#{$containerWidth} / 3) - 2rem);
+    @include tabletL{
+        max-width: calc((#{$containerWidth} / 3) - 2rem);
+    }
+    @include tablet{
+        max-width: calc((#{$containerWidth} / 3) - 5rem);
+    }
+    @include tablet{
+        max-width: 100%;
+    }
     &__description{
         background-color:$black;    
         color:$whiteText;
@@ -13,6 +19,7 @@
     }
     &-big{
         overflow: hidden;
+        padding: 0 0.5rem
     }
     &-desc{
         background-color:$black;
@@ -26,34 +33,46 @@
         
     }
     
+    
 }
 
  
 
 
-.projects__item{
-    transition: all 1s ease-in-out;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    &:hover{
-        transition: all 1s ease-in-out;
-        background-color:$black;
-        .mask{
-            height: 100%;
-            
-            
-        }
-        .plus__icon{
-            top: calc(50% - 1.5rem);
-            
+.projects{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include phoneL{
+            flex-direction: column;
         }
     }
-    
+    &__item{
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        &:hover{
+            transition: all 1s ease-in-out;
+            background-color:$black;
+            .mask{
+                height: 100%;
+                
+                
+            }
+            .plus__icon{
+                top: calc(50% - 1.5rem);
+                
+            }
+        }
+        
+    }
 }
+
 
 .mask{
     background:$black;
@@ -98,4 +117,14 @@
 
   .h100{
       height: 100%;
-  }
+      margin-bottom: 1rem;
+      @include phoneL{
+          flex-direction: column;
+          .project-desc__img{
+              width: 100%;
+          }
+          .box{
+            max-width: 100%;
+        }
+      }
+      }

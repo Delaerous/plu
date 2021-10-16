@@ -5,13 +5,22 @@
 }
 .swiper-slide{
     &__left{
-        max-width:45%
+        max-width:45%;
+        @include phone {
+            max-width: 69%;
+        }
     }
     &__right{
-        
+        max-width:55%
     }
     &__img{
         max-width: 16rem;
+        @include phoneL{
+            max-width: 8rem;
+        }
+        @include phone {
+            max-width: 6rem;
+        }
         
     }
     &__item{
@@ -34,6 +43,9 @@
     &__text{
         font-size: 0.85rem;
         margin-bottom: 1.5rem;
+        @include phoneL{
+            display: none;
+        }
     }
     &__link{
         font-size: 0.9rem;

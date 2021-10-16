@@ -1,0 +1,23 @@
+$yellow:#FECE1A;
+$black:#181A1C;
+$whiteText:#fff;
+$gray:#747C89;
+$formGray:rgba(255, 255, 255, 0.9);
+$containerWidth: 1170px;
+$baseFontSize: 20px;
+@include tabletL{
+    $containerWidth: 940px;
+}
+@include tablet{
+    $containerWidth: 724px;
+}
+
+@include phoneL{
+    $containerWidth: auto;
+}
+@include phone{
+    $containerWidth: auto;
+}
+@include phone-mini{
+    $containerWidth: auto;
+}

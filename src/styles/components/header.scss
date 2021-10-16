@@ -1,10 +1,14 @@
 .header{
     min-height: 3.5rem;
     background-color: $black;
+    padding-top: 1rem;
     &-wrapper{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        &--open{
+            align-items: flex-start;
+        }
     }
     &--fixed{
         position: fixed;
@@ -12,5 +16,13 @@
         left: 0;
         z-index: 100;
         width: 100%;
+    }
+    &__main{
+        display: flex;
+        align-items: center;
+        &--open{
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 }

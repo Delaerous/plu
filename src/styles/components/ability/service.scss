@@ -2,6 +2,9 @@
     padding: 3rem 0 3rem;
     display: flex;
     justify-content: space-between;
+    @include phoneL{
+        flex-direction: column;
+    }
     &__img{
         border-radius: 50%;
         max-width: 7.5rem;
@@ -20,5 +23,8 @@
         color:$whiteText;
         padding: 0 1.5rem;
         margin: 0 0 0.5rem 0;
+    }
+    &__item{
+        margin-bottom: 1rem;
     }
 }

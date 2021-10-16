@@ -5,6 +5,9 @@
     &__bottom{
         display: flex;
         justify-content: space-between;
+        @include phoneL{
+            flex-direction: column;
+        }
     }
     
 }

@@ -1,4 +1,4 @@
-@import "components/variables";
+
 @function rem($px) {
     @return $px / $baseFontSize+0rem;
 }
@@ -7,6 +7,15 @@
 
 html {
     font-size: $baseFontSize;
+    @include tablet {
+        font-size: $baseFontSize - 1px;
+    }
+    @include phoneL {
+        font-size: $baseFontSize - 2px;
+    }
+    @include phone {
+        font-size: $baseFontSize - 7px;
+    }
 }
 
 body {
@@ -61,9 +70,11 @@ ul li {
 .container {
     margin: 0 auto;
     max-width: $containerWidth;
+    width: 95%;
     overflow: hidden;
     &--relative{
         position: relative;
     }
+    
 
 }

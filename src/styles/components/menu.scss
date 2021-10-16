@@ -2,6 +2,9 @@
     &__list{
         display: flex;
         color:$whiteText;
+        &--open{
+            flex-direction: column;
+        }
     }
     &__item{
         text-transform: uppercase;
@@ -17,5 +20,11 @@
         &:hover{
             border:1px solid $yellow;
         }
+    }
+    @include tablet{
+        display: none;
+    }
+    &--open{
+        display: block;
     }
 }

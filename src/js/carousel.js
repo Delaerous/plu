@@ -6,6 +6,14 @@ const slider1 = document.querySelector('.swiper-containerjs');
 	slidesPerView: 5,
         spaceBetween: 30,
 	loop: true,
+	breakpoints: {
+		320: {
+			slidesPerView: 3,
+		},
+		768: {
+			slidesPerView: 5,
+		}
+	},
     
 	navigation: {
 		nextEl: '.carousel__next',

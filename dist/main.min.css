@@ -303,8 +303,26 @@ template {
 [hidden] {
   display: none; }
 
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Portrait phones and smaller */
+/* Large desktops and laptops */
 html {
-  font-size: 20px; }
+  font-size: 20px;
+  /* Portrait tablets and small desktops */
+  /* Landscape phones and portrait tablets */
+  /* Portrait phones and smaller */ }
+  @media screen and (max-width: 991px) {
+    html {
+      font-size: 19px; } }
+  @media (max-width: 767px) {
+    html {
+      font-size: 18px; } }
+  @media (max-width: 480px) {
+    html {
+      font-size: 13px; } }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -349,10 +367,12 @@ ul li {
 .container {
   margin: 0 auto;
   max-width: 1170px;
+  width: 95%;
   overflow: hidden; }
   .container--relative {
     position: relative; }
 
+/* Large desktops and laptops */
 .ability {
   background-color: #181A1C;
   padding: 2.5rem 0;
@@ -364,7 +384,11 @@ ul li {
 .services {
   padding: 3rem 0 3rem;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .services {
+      flex-direction: column; } }
   .services__img {
     border-radius: 50%;
     max-width: 7.5rem;
@@ -380,6 +404,8 @@ ul li {
     color: #fff;
     padding: 0 1.5rem;
     margin: 0 0 0.5rem 0; }
+  .services__item {
+    margin-bottom: 1rem; }
 
 .btn {
   font-size: 0.9rem;
@@ -407,6 +433,38 @@ ul li {
     .btn--black:hover {
       background-color: #FECE1A;
       color: #181A1C; }
+
+.burger {
+  background-color: #FECE1A;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  display: none;
+  /* Portrait tablets and small desktops */ }
+  .burger--open {
+    margin-top: 0rem; }
+  @media screen and (max-width: 991px) {
+    .burger {
+      display: block; } }
+  .burger__span {
+    height: 0.1rem;
+    width: 1rem;
+    background-color: #181A1C;
+    display: block;
+    position: absolute;
+    top: calc(50% - 0.1rem);
+    left: calc(50% - 0.5rem); }
+    .burger__span::after, .burger__span:before {
+      content: "";
+      height: 0.1rem;
+      width: 1rem;
+      background-color: #181A1C;
+      display: block;
+      position: absolute; }
+    .burger__span:before {
+      top: -0.3rem; }
+    .burger__span::after {
+      bottom: -0.3rem; }
 
 .carousel {
   padding: 2.5rem 0;
@@ -481,12 +539,22 @@ ul li {
 
 .feedback__list {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .feedback__list {
+      flex-direction: column; } }
 
 .feedback__item {
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  /* Landscape phones and portrait tablets */ }
   .feedback__item:last-child {
     margin-right: 0; }
+  @media (max-width: 767px) {
+    .feedback__item {
+      margin-bottom: 1rem; }
+      .feedback__item:last-child {
+        margin-bottom: 0; } }
 
 .human {
   display: flex;
@@ -582,17 +650,26 @@ ul li {
 
 .header {
   min-height: 3.5rem;
-  background-color: #181A1C; }
+  background-color: #181A1C;
+  padding-top: 1rem; }
   .header-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: flex-start; }
+    .header-wrapper--open {
+      align-items: flex-start; }
   .header--fixed {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%; }
+  .header__main {
+    display: flex;
+    align-items: center; }
+    .header__main--open {
+      flex-direction: column;
+      align-items: flex-start; }
 
 .hosting {
   text-align: center;
@@ -609,22 +686,29 @@ ul li {
     max-width: 6rem;
     max-height: 2rem; }
 
-.menu__list {
-  display: flex;
-  color: #fff; }
-
-.menu__item {
-  text-transform: uppercase;
-  vertical-align: middle;
-  margin: 10px 3px;
-  border: 1px solid #181A1C;
-  font-size: 0.75rem; }
-
-.menu__link {
-  padding: 0.5rem 0.75rem 0.5rem;
-  transition: border-color 1s ease; }
-  .menu__link:hover {
-    border: 1px solid #FECE1A; }
+.menu {
+  /* Portrait tablets and small desktops */ }
+  .menu__list {
+    display: flex;
+    color: #fff; }
+    .menu__list--open {
+      flex-direction: column; }
+  .menu__item {
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin: 10px 3px;
+    border: 1px solid #181A1C;
+    font-size: 0.75rem; }
+  .menu__link {
+    padding: 0.5rem 0.75rem 0.5rem;
+    transition: border-color 1s ease; }
+    .menu__link:hover {
+      border: 1px solid #FECE1A; }
+  @media screen and (max-width: 991px) {
+    .menu {
+      display: none; } }
+  .menu--open {
+    display: block; }
 
 .newsletter {
   background: url("./images/brand-bg.png");
@@ -638,14 +722,29 @@ ul li {
     margin-bottom: 1.5rem; }
   .newsletter__main {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .newsletter__main {
+        flex-direction: column; } }
   .newsletter__text {
     color: #fff;
-    width: 47%; }
+    width: 47%;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .newsletter__text {
+        width: 100%;
+        text-align: center; } }
   .newsletter__form {
     width: 53%;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .newsletter__form {
+        flex-direction: column;
+        width: 100%;
+        align-items: center; } }
   .newsletter__btn {
     margin: 0 0;
     width: 35%;
@@ -665,10 +764,23 @@ ul li {
     color: #555555;
     vertical-align: middle;
     border-radius: 4px;
-    outline: none; }
+    outline: none;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .newsletter__input {
+        width: 100%; } }
 
 .column {
-  min-width: calc((1170px / 3) - 1rem); }
+  width: calc((1170px / 3) - 1rem);
+  /* Portrait tablets and small desktops */
+  /* Landscape phones and portrait tablets */ }
+  @media screen and (max-width: 991px) {
+    .column {
+      width: calc((1170px / 3) - 4rem); } }
+  @media (max-width: 767px) {
+    .column {
+      width: 100%;
+      margin-bottom: 1rem; } }
   .column__top {
     background-color: #181A1C;
     color: #FECE1A;
@@ -676,7 +788,11 @@ ul li {
     border-radius: 0.5rem 0.5rem 0 0; }
   .column__main, .column__bottom {
     padding: 0  2rem 1.5rem;
-    background-color: #fff; }
+    background-color: #fff;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .column__main, .column__bottom {
+        padding: 1rem  2rem 1.5rem; } }
   .column__title {
     font-size: 2rem;
     font-weight: 400; }
@@ -688,9 +804,13 @@ ul li {
   color: #747C89;
   font-size: 1.5rem;
   font-weight: lighter;
-  border-bottom: 1px solid #181A1C; }
+  border-bottom: 1px solid #181A1C;
+  /* Portrait tablets and small desktops */ }
   .column-characteristic__item--bold {
     font-weight: bold; }
+  @media screen and (max-width: 991px) {
+    .column-characteristic__item {
+      padding: 0.25rem; } }
 
 .price {
   background-color: #FECE1A;
@@ -700,7 +820,11 @@ ul li {
   .price__list {
     display: flex;
     justify-content: space-between;
-    padding-top: 2.5rem; }
+    padding-top: 2.5rem;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .price__list {
+        flex-direction: column; } }
   .price__main {
     margin-bottom: 2.5rem; }
   .price__subtitle {
@@ -738,10 +862,25 @@ ul li {
   background-color: #FECE1A; }
 
 .swiper-slide__left {
-  max-width: 45%; }
+  max-width: 45%;
+  /* Portrait phones and smaller */ }
+  @media (max-width: 480px) {
+    .swiper-slide__left {
+      max-width: 69%; } }
+
+.swiper-slide__right {
+  max-width: 55%; }
 
 .swiper-slide__img {
-  max-width: 16rem; }
+  max-width: 16rem;
+  /* Landscape phones and portrait tablets */
+  /* Portrait phones and smaller */ }
+  @media (max-width: 767px) {
+    .swiper-slide__img {
+      max-width: 8rem; } }
+  @media (max-width: 480px) {
+    .swiper-slide__img {
+      max-width: 6rem; } }
 
 .swiper-slide__item {
   display: flex;
@@ -762,7 +901,11 @@ ul li {
 
 .swiper-slide__text {
   font-size: 0.85rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .swiper-slide__text {
+      display: none; } }
 
 .swiper-slide__link {
   font-size: 0.9rem;
@@ -845,12 +988,20 @@ ul li {
   font-weight: 400;
   line-height: 2rem;
   font-size: 1.925;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .hiring {
+      width: 100%; } }
   .hiring__text {
     padding: 1rem;
     font-weight: 100;
     font-size: 0.85rem;
-    line-height: 1rem; }
+    line-height: 1rem;
+    /* Landscape tablets and medium desktops */ }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .hiring__text {
+        padding: 0.3rem 0; } }
 
 .people-mask {
   z-index: 1;
@@ -868,12 +1019,17 @@ ul li {
     padding-top: 4rem; }
   .people-mask__text {
     font-size: 0.85rem;
-    font-weight: 100; }
+    font-weight: 100;
+    padding: 0.5rem; }
 
 .people {
   margin-bottom: 2rem; }
   .people__list {
-    display: flex; }
+    display: flex;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .people__list {
+        flex-direction: column; } }
   .people__item {
     border: 2px solid #fff;
     position: relative;
@@ -882,7 +1038,11 @@ ul li {
     margin-right: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .people__item {
+        margin-right: 0; } }
     .people__item:last-child {
       margin-right: 0; }
     .people__item:hover .people-mask {
@@ -904,7 +1064,12 @@ ul li {
 .skills {
   transition: all  1s  ease-out;
   position: relative;
-  width: 48%; }
+  width: 48%;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .skills {
+      width: 100%;
+      margin-bottom: 1rem; } }
   .skills__item {
     transition: all  1s  ease-out;
     margin-bottom: 2rem;
@@ -971,7 +1136,11 @@ ul li {
   padding: 0 0 2.5rem; }
   .we__bottom {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    /* Landscape phones and portrait tablets */ }
+    @media (max-width: 767px) {
+      .we__bottom {
+        flex-direction: column; } }
 
 .we__main {
   padding-top: 2.5rem;
@@ -1058,13 +1227,26 @@ ul li {
 .project {
   display: block;
   margin: 0.6rem;
-  max-width: 31%; }
+  max-width: calc((1170px / 3) - 2rem);
+  /* Landscape tablets and medium desktops */
+  /* Portrait tablets and small desktops */
+  /* Portrait tablets and small desktops */ }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .project {
+      max-width: calc((1170px / 3) - 2rem); } }
+  @media screen and (max-width: 991px) {
+    .project {
+      max-width: calc((1170px / 3) - 5rem); } }
+  @media screen and (max-width: 991px) {
+    .project {
+      max-width: 100%; } }
   .project__description {
     background-color: #181A1C;
     color: #fff;
     z-index: 1; }
   .project-big {
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 0 0.5rem; }
   .project-desc {
     background-color: #181A1C;
     display: flex;
@@ -1073,6 +1255,15 @@ ul li {
     height: 0; }
     .project-desc__img {
       width: 47%; }
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .projects__list {
+      flex-direction: column; } }
 
 .projects__item {
   transition: all 1s ease-in-out;
@@ -1127,7 +1318,16 @@ ul li {
     border: 0; } }
 
 .h100 {
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 1rem;
+  /* Landscape phones and portrait tablets */ }
+  @media (max-width: 767px) {
+    .h100 {
+      flex-direction: column; }
+      .h100 .project-desc__img {
+        width: 100%; }
+      .h100 .box {
+        max-width: 100%; } }
 
 .works {
   background-color: #FECE1A;
@@ -1136,3 +1336,5 @@ ul li {
   justify-content: center;
   flex-direction: column;
   text-align: center; }
+
+/* Large desktops and laptops */

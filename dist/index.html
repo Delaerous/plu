@@ -18,44 +18,49 @@
         <header class="header" id="header">
             <div class="container">
                 <div class="header-wrapper">
-                    <div class="header__left">
-                        <div class="logo">
-                            <img class="logo__img" src="./images/logo.png"></img>
+                    <div class="header__main">
+                        <div class="header__left">
+                            <div class="logo">
+                                <img class="logo__img" src="./images/logo.png"></img>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link" data-scroll-to="home"> HOME
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link" data-scroll-to="services"> SERVICES
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link" data-scroll-to="works"> PORTFOLIO
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link" data-scroll-to="about"> ABOUT
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link" data-scroll-to="client"> CLIENTS
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link" data-scroll-to="price"> PRICE
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link"  data-scroll-to="contactUs"> CONTACT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    <div class="header__right">
-                        <nav class="menu">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a href="" class="menu__link" data-scroll-to="home"> HOME
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link" data-scroll-to="services"> SERVICES
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link" data-scroll-to="works"> PORTFOLIO
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link" data-scroll-to="about"> ABOUT
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link" data-scroll-to="client"> CLIENTS
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link" data-scroll-to="price"> PRICE
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link"  data-scroll-to="contactUs"> CONTACT
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="burger">
+                        <span class="burger__span"></span>
                     </div>
                 </div>
             </div>
@@ -64,7 +69,7 @@
         <section class="slider" data-section="home">
             <div class="swiper mySwiper">
                 <div class="parallax-bg" " data-swiper-parallax=" -20%"></div>
-                <div class="triangle wow animate__animated animate__fadeIn"> </div>
+                <!-- <div class="triangle wow animate__animated animate__fadeIn"> </div> -->
                 <div class="swiper-wrapper">
     
                     <div class="swiper-slide">
@@ -180,7 +185,7 @@
             </div>
         </section>
         <section class="works" data-section="works">
-            <div class="triangle animate__animated wow animate__fadeIn"> </div>
+            <!-- <div class="triangle animate__animated wow animate__fadeIn"> </div> -->
             <div class="container">
                 
                 <div class="works__top">
@@ -840,10 +845,10 @@
                     </div>
                 </div>
                 <div class="we__bottom">
-                    <div class="skills animate__animated animate__fadeInRightBig">
+                    <div class="skills wow animate__animated animate__fadeInRightBig">
                         <ul class="skills__list">
                             <li class="skills__item">
-                                <span class="skills__bar wow  animate__fadeInLeftBig slower " ></span>
+                                <span class="skills__bar wow animate__animated animate__fadeInLeftBig animate__slower" ></span>
                                 <h4 class="skills__name">Graphic Design</h4>
                             </li>
                             <li class="skills__item">
@@ -1060,7 +1065,7 @@
                     <h3 class="price__subtitle">
                         We Offer Custom Plans. Contact Us For More Info.
                     </h3>
-                    <button class="btn">
+                    <button  class="btn menu__link" data-scroll-to="contactUs">
                         Contact Us
                     </button>
                 </div>

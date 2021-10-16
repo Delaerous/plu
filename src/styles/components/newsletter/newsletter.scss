@@ -12,16 +12,30 @@
     &__main{
         display: flex;
         justify-content: space-between;
+        @include phoneL{
+            flex-direction: column;
+
+        }
 
     }
     &__text{
         color:$whiteText;
-        width: 47%;    
+        width: 47%;   
+        @include phoneL{
+            width: 100%;   
+            text-align: center;
+            
+        } 
     }
     &__form{
         width: 53%;
         display: flex;
         justify-content: flex-end;
+        @include phoneL{
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
     &__btn{
         margin: 0 0;
@@ -45,5 +59,8 @@
         vertical-align: middle;
         border-radius: 4px;
         outline: none;
+        @include phoneL{
+            width: 100%;
+        }
     }
 }
