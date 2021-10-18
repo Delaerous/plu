@@ -5,9 +5,12 @@ const menuList = document.querySelector(".menu__list");
 const menu = document.querySelector(".menu");
 
 
-burger.addEventListener("click", (e)=>{
+
+burger.addEventListener("click", burgerToggle);
+
+function burgerToggle() {
     wrapper.classList.toggle('header-wrapper--open');
     headerMain.classList.toggle('header__main--open');
     menuList.classList.toggle('menu__list--open');
     menu.classList.toggle('menu--open');
-});
+}

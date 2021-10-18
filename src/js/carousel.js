@@ -7,6 +7,9 @@ const slider1 = document.querySelector('.swiper-containerjs');
         spaceBetween: 30,
 	loop: true,
 	breakpoints: {
+		50: {
+			slidesPerView: 1,
+		},
 		320: {
 			slidesPerView: 3,
 		},

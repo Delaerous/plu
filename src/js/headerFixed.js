@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", onDOMReady);
+let header = document.getElementById('header');
 
 function onDOMReady() {
   window.addEventListener('scroll', onWindowScroll);
