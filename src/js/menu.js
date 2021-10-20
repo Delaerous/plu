@@ -1,6 +1,6 @@
 const link = $('.menu__link');
 
-let headerHeight = document.getElementById('header').offsetTop;
+let headerHeight = $('header').outerHeight() ;
 link.on('click', (e) => {
   e.preventDefault();
   const currentLink = $(e.currentTarget);

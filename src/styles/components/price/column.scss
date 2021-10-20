@@ -1,7 +1,7 @@
 .column{
     width: calc((#{$containerWidth} / 3) - 1rem);
     @include tablet{
-        width: calc((#{$containerWidth} / 3) - 4rem);
+        width: calc((#{$containerWidth} / 3) - 8rem);
     }
     @include phoneL{
         width: 100%;
